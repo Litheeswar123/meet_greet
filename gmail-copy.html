@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copy ACM Meet &amp; Greet Email into Gmail</title>
+<style>
+  body{margin:0;background:#edf4fb;color:#0a2540;font-family:Arial,Helvetica,sans-serif}
+  .helper{max-width:780px;margin:22px auto;padding:0 14px}
+  .instructions{background:#fff;border:1px solid #d7e5f3;border-radius:12px;padding:16px 18px;margin-bottom:16px;line-height:1.5}
+  .instructions h1{font-size:20px;margin:0 0 8px;color:#0a2540}
+  .instructions p{margin:7px 0;font-size:14px}
+  .copy-button{border:0;border-radius:8px;background:#0757c8;color:#fff;font-size:15px;font-weight:700;padding:12px 18px;cursor:pointer}
+  .copy-button:hover{background:#0648a8}
+  .status{font-size:13px;color:#275478;margin-left:10px}
+  .preview{margin:0 auto;max-width:600px}
+  @media(max-width:620px){.helper{margin:10px auto;padding:0 8px}.instructions{padding:13px}.status{display:block;margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="helper">
+  <div class="instructions">
+    <h1>ACM VIT-AP Meet &amp; Greet — Gmail copy page</h1>
+    <p>Open this page from your deployed GitHub Pages website, then click the blue button. It copies the formatted email body—not the website navigation or instructions—with image links converted to public URLs.</p>
+    <p><strong>After copying:</strong> open Gmail → Compose → click in the message body → press Ctrl+V. Avoid copying the HTML source code itself.</p>
+    <button class="copy-button" id="copyEmail" type="button">Copy formatted email for Gmail</button>
+    <span class="status" id="status" role="status" aria-live="polite"></span>
+  </div>
+  <div class="preview" id="email-card">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;max-width:600px;margin:0 auto;border-collapse:collapse;background:#ffffff;border:1px solid #d7e5f3;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;color:#0a2540;">
+      <tr><td height="5" style="height:5px;background:#38bdf8;font-size:1px;line-height:1px;">&nbsp;</td></tr>
+      <tr><td bgcolor="#0757bd" align="center" style="background:#0757bd;padding:18px 16px 16px;text-align:center;color:#ffffff;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;margin:0 auto;"><tr><td bgcolor="#ffffff" align="center" style="background:#ffffff;padding:3px;border-radius:50%;">
+          <img src="assets/chapter-logo.png" width="66" height="66" alt="ACM Chapter, VIT-AP University" style="display:block;width:66px;height:66px;border:0;outline:none;text-decoration:none;">
+        </td></tr></table>
+        <p style="margin:9px 0 0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#ffffff;text-align:center;">ACM VIT-AP STUDENT CHAPTER</p>
+        <p style="margin:4px 0 0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:10px;line-height:1.4;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c7eaff;text-align:center;">PRESENTS</p>
+      </td></tr>
+      <tr><td align="center" style="padding:18px 15px 0;text-align:center;">
+        <p style="margin:0 0 5px;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:11px;line-height:1.4;font-weight:700;letter-spacing:2px;color:#0785ef;text-transform:uppercase;text-align:center;">YOU'RE INVITED</p>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr>
+          <td width="17%" align="center" valign="middle" style="width:17%;padding:0 2px;"><img src="assets/laptop-illustration.png" width="82" alt="Laptop with a code screen and lightbulb" style="display:block;width:100%;max-width:82px;height:auto;border:0;"></td>
+          <td width="66%" align="center" valign="middle" style="width:66%;padding:0 1px;text-align:center;">
+            <p style="margin:0 0 4px;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height:1.3;font-weight:800;letter-spacing:1.5px;color:#0a1422;text-align:center;">WELCOME TO</p>
+            <p style="margin:0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:48px;line-height:0.98;letter-spacing:-1.8px;font-weight:800;color:#0785ef;text-align:center;white-space:nowrap;">MEET</p>
+            <p style="margin:0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:40px;line-height:1.03;letter-spacing:-1.2px;font-weight:800;color:#091b34;text-align:center;white-space:nowrap;">&amp; GREET</p>
+          </td>
+          <td width="17%" align="center" valign="middle" style="width:17%;padding:0 2px;"><img src="assets/community-bubble.png" width="82" alt="Technology community and impact speech bubble" style="display:block;width:100%;max-width:82px;height:auto;border:0;"></td>
+        </tr></table>
+      </td></tr>
+      <tr><td align="center" style="padding:7px 18px 0;text-align:center;">
+        <p style="margin:0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:11px;line-height:1.5;font-weight:800;letter-spacing:1.2px;color:#102e56;text-transform:uppercase;text-align:center;">PEOPLE &nbsp;|&nbsp; IDEAS &nbsp;|&nbsp; OPPORTUNITIES</p>
+        <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:8px auto 0;border-collapse:collapse;"><tr><td width="42" height="3" style="width:42px;height:3px;background:#0785ef;font-size:1px;line-height:1px;">&nbsp;</td></tr></table>
+        <p style="margin:12px 0 0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#344b65;text-align:center;">Meet the ACM VIT-AP community. Connect with fellow students, exchange ideas, and discover opportunities to learn, build, and create together.</p>
+      </td></tr>
+      <tr><td style="padding:18px 16px 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f6fbff" style="width:100%;border-collapse:collapse;background:#f6fbff;border:1px solid #d7e8f8;">
+          <tr>
+            <td width="33.333%" valign="middle" style="width:33.333%;padding:12px 7px;border-right:1px solid #d5e5f5;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td width="35" valign="middle" style="width:35px;padding-right:5px;"><img src="assets/venue-icon.png" width="32" height="32" alt="" style="display:block;width:32px;height:32px;border:0;"></td><td valign="middle"><p style="margin:0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:10px;line-height:1.3;font-weight:800;letter-spacing:1px;color:#1257a6;text-transform:uppercase;">VENUE</p><p style="margin:4px 0 0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:1.35;font-weight:700;color:#0a2540;">-------</p></td></tr></table></td>
+            <td width="33.333%" valign="middle" style="width:33.333%;padding:12px 7px;border-right:1px solid #d5e5f5;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td width="35" valign="middle" style="width:35px;padding-right:5px;"><img src="assets/date-icon.png" width="32" height="32" alt="" style="display:block;width:32px;height:32px;border:0;"></td><td valign="middle"><p style="margin:0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:10px;line-height:1.3;font-weight:800;letter-spacing:1px;color:#1257a6;text-transform:uppercase;">DATE</p><p style="margin:4px 0 0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:11px;line-height:1.4;font-weight:700;color:#0a2540;">22nd October 2026<br>Thursday</p></td></tr></table></td>
+            <td width="33.333%" valign="middle" style="width:33.333%;padding:12px 7px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td width="35" valign="middle" style="width:35px;padding-right:5px;"><img src="assets/time-icon.png" width="32" height="32" alt="" style="display:block;width:32px;height:32px;border:0;"></td><td valign="middle"><p style="margin:0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:10px;line-height:1.3;font-weight:800;letter-spacing:1px;color:#1257a6;text-transform:uppercase;">TIME</p><p style="margin:4px 0 0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:11px;line-height:1.4;font-weight:700;color:#0a2540;">11:00 am to 1:00 pm</p></td></tr></table></td>
+          </tr>
+        </table>
+      </td></tr>
+      <tr><td align="center" style="padding:14px 14px 18px;text-align:center;">
+        <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#0757c8" style="border-collapse:collapse;background:#0757c8;border-radius:24px;"><tr><td align="center" bgcolor="#0757c8" style="background:#0757c8;padding:10px 22px;border-radius:24px;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:12px;line-height:1;font-weight:800;letter-spacing:1.1px;color:#ffffff;white-space:nowrap;">&#10003;&nbsp;&nbsp; OD PROVIDED</td></tr></table>
+      </td></tr>
+      <tr><td align="center" style="padding:0;text-align:center;"><img src="assets/community-scene.png" width="600" alt="ACM students collaborating on technology and ideas at VIT-AP" style="display:block;width:100%;max-width:600px;height:auto;border:0;margin:0 auto;"></td></tr>
+      <tr><td align="center" bgcolor="#092b55" style="background:#092b55;padding:15px 12px 17px;text-align:center;"><p style="margin:0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:11px;line-height:1.5;font-weight:800;letter-spacing:1.5px;color:#ffffff;text-transform:uppercase;">LEARN &nbsp;·&nbsp; BUILD &nbsp;·&nbsp; SHARE &nbsp;·&nbsp; BELONG</p><p style="margin:5px 0 0;font-family:'Google Sans','Product Sans',Arial,Helvetica,sans-serif;font-size:11px;line-height:1.5;color:#c7ddeb;">ACM VIT-AP Student Chapter</p></td></tr>
+    </table>
+  </div>
+</div>
+<script>
+(function(){
+  const button=document.getElementById('copyEmail');
+  const status=document.getElementById('status');
+  const card=document.getElementById('email-card');
+  function imageBase(){
+    if(location.protocol==='https:'||location.protocol==='http:') return new URL('./',location.href).href;
+    return 'https://litheeswar123.github.io/meet-greet/';
+  }
+  button.addEventListener('click',async function(){
+    const clone=card.cloneNode(true);
+    clone.querySelectorAll('img').forEach(function(img){
+      const raw=img.getAttribute('src');
+      if(raw && !/^https?:|^data:/i.test(raw)) img.setAttribute('src',new URL(raw,imageBase()).href);
+      img.removeAttribute('srcset');
+    });
+    const html=clone.innerHTML;
+    const plain=clone.innerText||clone.textContent||'';
+    try{
+      if(navigator.clipboard && window.ClipboardItem){
+        await navigator.clipboard.write([new ClipboardItem({
+          'text/html':new Blob([html],{type:'text/html'}),
+          'text/plain':new Blob([plain],{type:'text/plain'})
+        })]);
+        status.textContent='Copied! Open Gmail Compose and press Ctrl+V in the message body.';
+      }else{
+        const range=document.createRange();
+        range.selectNodeContents(clone);
+        const holder=document.createElement('div');
+        holder.contentEditable='true';
+        holder.style.position='fixed';holder.style.left='-9999px';holder.appendChild(clone);
+        document.body.appendChild(holder);
+        const selection=window.getSelection();selection.removeAllRanges();
+        const fallbackRange=document.createRange();fallbackRange.selectNodeContents(holder);
+        selection.addRange(fallbackRange);
+        const ok=document.execCommand('copy');
+        selection.removeAllRanges();holder.remove();
+        status.textContent=ok?'Copied! Open Gmail Compose and press Ctrl+V in the message body.':'Copy was blocked by the browser. Open this page on GitHub Pages over HTTPS and try again.';
+      }
+    }catch(e){
+      status.textContent='The browser blocked clipboard access. Open this page from your deployed GitHub Pages HTTPS address and click again.';
+    }
+  });
+})();
+</script>
+</body>
+</html>
